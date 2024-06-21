@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        
+        .item {
+            width: 100%;
+            background-color: #F0F0F0;
+            border-radius: 10px;
+            border: 2px solid #007FFF;
+            padding: 20px 24px;
+        }
+        .top-side {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        .izmenit {
+            margin-top: 10px;
+            color: white;
+            border-radius: 10px;
+            width: 60px;
+            height: 20px;
+            border: none;
+            cursor: pointer;
+            background-color: blue;
+        }
+        .close {
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: rgb(38, 0, 255);
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Todo app</h1>
+        <form name="todo">
+            <input type="text" name="title" >
+            <button>add task</button>
+        </form>
+    </center>
+    <br>
+    <br><hr>
+    <br><br>
+
+    <div class="container">
+        <!-- <div class="item">
+            <div class="top-side">
+                <span>Titlte</span>
+                <button>x</button>
+            </div>
+            <span class="time" >11:44</span>
+            </div>
+        </div> -->
+    </div>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
